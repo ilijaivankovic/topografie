@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "<!-- id van de App (com.naamontwikkelaar.naamapp) -->"
+        version   = "1.0.0">
+
+    <name>Naam van de App</name>
+
+    <description>
+        <!-- Omschrijving van de App -->
+    </description>
+
+    <author href="http://" email="">
+        <!-- Naam van de ontwikkelaar. -->
+    </author>
+
+	<!-- De bounce uitschakelen. -->
+    <preference name="webviewbounce" value="false" />
+    
+	<!-- De app fullscreen maken. -->
+    <preference name="fullscreen" value="true" />
+
+</widget>
