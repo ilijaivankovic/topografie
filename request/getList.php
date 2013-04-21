@@ -10,5 +10,11 @@ header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
 $arr = array('Amsterdam' => 'Nederland', 'Groningen' => 'Nederland', 'Den Haag' => 'Nederland');
+
+// $arr = array(
+	//array("Amsterdam", "Nederland", "test"),
+	//array("Groningen", "Nederland", "test"),
+	//array("Den Haag", "Nederland", "test")
+//);
 echo json_encode($arr);
 ?>

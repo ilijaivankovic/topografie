@@ -6,6 +6,7 @@
 var keys = [];
 var vragen = [];
 var antwoorden = [];
+var longlat = [];
 
 // Zet de questioncounter op nul. Deze wordt bij het opstarten op 1 gezet
 var questionCounter = 0;
@@ -27,16 +28,19 @@ $(document).ready(function() {
     url: 'http://vernonweb.nl/topografie/request/getList.php', 
     data: { get_param: 'value' }, 
     dataType: 'json',
-    success: function (data) { 
+    success: function (data) {
         $.each(data, function(antwoord, vraag) {
 			index++;
 			keys.push(index);
             vragen.push(vraag);
 			antwoorden.push(antwoord);
+
 			// TIJDELIJK 
 			// Laat antwoorden in console log zien voor test doeleinden
-			console.log(index + ' Hoe heet deze plaats in ' + vraag + '? Het antwoord is: ' + antwoord);
+			console.log(index + ' Hoe heet deze plaats in ' + vraag + '? Het antwoord is: ' + antwoord + '. De coordinaten hiervan zijn: ');
+			
         });
+		console.log(data[1]);
 		// Start overhoring en verhoog de questionCounter met 1
 		startOverhoring();
 		
@@ -45,6 +49,9 @@ $(document).ready(function() {
 			if(e.which == 13) {
 				controleerVraag();	
 			}
+		});
+		$(".check-antwoord").click(function() {
+			controleerVraag();
 		});
     }
 	});
