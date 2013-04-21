@@ -4,14 +4,14 @@
         id        = "<!-- id van de App (com.naamontwikkelaar.naamapp) -->"
         version   = "1.0.0">
 
-    <name>Naam van de App</name>
+    <name>Topografie</name>
 
     <description>
-        <!-- Omschrijving van de App -->
+        Oefen topografie op een leuke manier! Voor jong en oud.
     </description>
 
     <author href="http://" email="">
-        <!-- Naam van de ontwikkelaar. -->
+        Ilija Ivankpvic
     </author>
 
 	<!-- De bounce uitschakelen. -->
