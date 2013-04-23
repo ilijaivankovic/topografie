@@ -1,7 +1,7 @@
 img#map_canvas {
 	width: 70%;
 	float: left;
-	height: 530px;
+	height: 430px;
 	-webkit-border-radius: .6em;
 	border-radius: .6em;
 }
@@ -10,7 +10,7 @@ img#map_canvas {
 	width: 28%;
 	float: right;
 	margin-left: 1%;
-	height: 530px;
+	height: 430px;
 	-webkit-border-radius: .6em;
 	border-radius: .6em;
 	background-color: #eee;
@@ -22,6 +22,19 @@ img#map_canvas {
 	padding-top: 8px;
 }
 
+.score-juist, .score-onjuist {
+	font-size: 60px;
+	margin-top: 10px;
+}
+
+.score-onjuist {
+	text-shadow: 0 1px 0 #7D1A0C;
+}
+
+.score-juist {
+	text-shadow: 0 1px 0 #92A84D;
+}
+
 #score-inner hr {
 	border: 0px;
 	border-top: 1px solid grey;
@@ -30,5 +43,37 @@ img#map_canvas {
 
 #antwoord {
 	margin-top: 30px;
-	-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text'
+	-webkit-user-select: none;
+}
+
+#show-score {
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px solid #ddd;
+}
+
+#show-score #juist {
+	width: 50%;
+	height: 90px;
+	background-color: #A2C760;
+	border-top-left-radius: .6em;
+	float: left;
+	text-align: center;
+}
+
+#show-score #onjuist {
+	width: 50%;
+	height: 90px;
+	background-color: #C44731;
+	border-top-right-radius: .6em;
+	float: right;
+	text-align: center;
+}
+
+.de-vraag {
+	font-weight: bold;
+}
+
+#container-antwoord {
+	margin-top: 30px;
 }

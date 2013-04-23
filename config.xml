@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "<!-- id van de App (com.naamontwikkelaar.naamapp) -->"
+        id        = "com.vernondegoede.topografie"
         version   = "1.0.0">
 
-    <name>Naam van de App</name>
+    <name>Topografie</name>
 
     <description>
-        <!-- Omschrijving van de App -->
+        Een interactieve manier van topografie leren d.m.v. Google maps.
     </description>
 
-    <author href="http://" email="">
-        <!-- Naam van de ontwikkelaar. -->
+    <author href="http://www.vernondegoede.com" email="info@vernondegoede.com">
+        vernondegoede
     </author>
 
 	<!-- De bounce uitschakelen. -->

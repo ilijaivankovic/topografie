@@ -34,28 +34,55 @@
 				
 				<!-- Score -->
 				<div id="score">
+					
+					<div id="show-score">
+						<div id="juist">
+							<div class="score-juist"></div>
+						</div>
+						<div id="onjuist">
+							<div class="score-onjuist"></div>
+						</div>
+					</div>
 					<div id="score-inner">
 						<div class="voortgang"></div>
 						<div class="de-vraag"></div>
+						<div class="feedback-antwoord"></div>
 						
-						<hr />
-						
-						<div class="score-juist"></div><br />
-						<div class="score-onjuist"></div>
 					</div>
 				</div>
 				<!-- // Score // -->
 				
 				<div style="clear: both;"></div>
-				
-				<!-- Antwoord -->
-				<input type="text" name="text-6" class="antwoord" autocomplete="off" placeholder="Antwoord..." autofocus="autofocus" />
-				<input type="submit" class="check-antwoord" value="OK" />
-				<!-- // Antwoord // -->
+				<div id="container-antwoord">
+					<!-- Antwoord -->
+					<input type="text" name="text-6" class="antwoord" autocomplete="off" placeholder="Antwoord..." autofocus="autofocus" />
+					<input type="submit" class="check-antwoord" value="OK" />
+					<!-- // Antwoord // -->
+				</div>
 			</div>
 			
-			<div data-role="dialog" id="dialog">Overhoring afgelopen!</div>
+			<div data-role="dialog" id="messagebox">
+				<div data-role="header">
+					<h1>Message</h1>
+				</div><!-- /header -->
+
+				<div data-role="content">
+					<span id="phMessage"></span>
+				</div>
+			</div>
 			
 		</div>
+		
+		<div data-role="dialog" id="dialoog" data-close-btn="none">
+			<div data-role="header" data-theme="d">
+				<h1>Overhoring afgelopen</h1>
+			</div>
+			<div data-role="content" data-theme="c">
+				<p><strong>Goede antwoorden:</strong> <span class="final-juist">&nbsp;</span></p>
+				<p><strong>Foute antwoorden:</strong> <span class="final-onjuist">&nbsp;</span></p>
+				<a href="index.html" data-role="button" data-theme="b" target="_parent">Terug naar het overzicht</a>       
+			</div>
+		</div>
+		
 	</body>
 </html>
